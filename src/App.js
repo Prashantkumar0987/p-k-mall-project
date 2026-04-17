@@ -23,7 +23,7 @@ function App() {
 
   // 🔄 Fetch products
   useEffect(() => {
-    fetch("http://localhost:5001/products")
+    fetch("https://p-k-mall-project-1.onrender.com")
       .then((res) => res.json())
       .then((data) => {
         setProducts(Array.isArray(data) ? data : []);
